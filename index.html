@@ -7,9 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         body{ padding: 10px; }
-        .bbox{ background-color:rgba(0, 0, 0); padding: 10px; }
         .gbox{ background-color:rgba(0, 0, 0, 0.1); padding: 10px; }
-        .space{ margin-bottom: 5px; }
+        .space{ border-bottom: solid 0.3em black; }
+        .bbox {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            background-color:rgba(0, 0, 0, 0.1);
+        }
+
+        /* Then style the iframe to fit in the container div with full height and width */
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
     <title>AHS Archery Scoreboard</title>
   </head>
@@ -21,23 +36,23 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 rounded bbox">
-                <iframe src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=496148968&range=A1:I27&widget=false&chrome=false&headers=false" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:300px;width:100%;border:none;overflow:hidden;"></iframe>
+            <div class="col-12 rounded bbox space" style="padding-bottom: 56.25%;">
+                <iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=496148968&range=A1:I27&widget=false&chrome=false&headers=false"></iframe> 
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 rounded bbox space">
-                <iframe src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=496148968&range=A29:D34&widget=false&chrome=false&headers=false" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:140px;width:100%;border:none;overflow:hidden;"></iframe>
+            <div class="col-12 rounded bbox space" style="padding-bottom: 200px;">
+                <iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=496148968&range=A29:D34&widget=false&chrome=false&headers=false" style="max-height: 200px;"></iframe>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 rounded bbox">
-                <iframe src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=1546487705&range=A1:I27&widget=false&chrome=false&headers=false" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:300px;width:100%;border:none;overflow:hidden;"></iframe>
+            <div class="col-12 rounded bbox space" style="padding-bottom: 56.25%;">
+                <iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=1546487705&range=A1:I27&widget=false&chrome=false&headers=false"></iframe>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 rounded bbox">
-                <iframe src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=1546487705&range=A29:D34&widget=false&chrome=false&headers=false" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:140px;width:100%;border:none;overflow:hidden;"></iframe>
+            <div class="col-12 rounded bbox space" style="padding-bottom: 200px;">
+                <iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/1oC77CfWgQZJlmMtB-ezj1BXxUmuGTrUyuQDj1zFQ0x0/htmlembed?single=true&gid=1546487705&range=A29:D34&widget=false&chrome=false&headers=false" style="max-height: 200px;"></iframe>
             </div>
         </div>
     </div>
