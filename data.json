@@ -1,0 +1,72 @@
+{
+    "user": {
+        "username": "admin",
+        "password": "password123",
+        "team_name": "Panthers Archery",
+        "school": "Central High School"
+    },
+    "roster": [
+        {
+            "id": "archer_6a8c78a5d2f60",
+            "name": "First Archer",
+            "division": "Elementary"
+        },
+        {
+            "id": "archer_6a8c78b98c42a",
+            "name": "Second Archer",
+            "division": "High School"
+        },
+        {
+            "id": "archer_6a8c78c6e3c73",
+            "name": "First Girl Archer",
+            "division": "High School"
+        },
+        {
+            "id": "archer_6a8c78d291543",
+            "name": "Second Girl Archer",
+            "division": "High School"
+        }
+    ],
+    "meets": [
+        {
+            "id": "meet_6a8c78edeef7c",
+            "name": "First Local Meet",
+            "date": "2026-08-24",
+            "location": "Amory, MS",
+            "is_live": true,
+            "created_at": "2026-08-24 17:01:33",
+            "archers": [
+                {
+                    "id": "archer_6a8c78a5d2f60",
+                    "name": "First Archer",
+                    "team_name": "Panthers Archery",
+                    "division": "Elementary"
+                },
+                {
+                    "id": "archer_6a8c78b98c42a",
+                    "name": "Second Archer",
+                    "team_name": "Panthers Archery",
+                    "division": "High School"
+                },
+                {
+                    "id": "archer_6a8c78c6e3c73",
+                    "name": "First Girl Archer",
+                    "team_name": "Panthers Archery",
+                    "division": "High School"
+                },
+                {
+                    "id": "archer_6a8c78d291543",
+                    "name": "Second Girl Archer",
+                    "team_name": "Panthers Archery",
+                    "division": "High School"
+                }
+            ],
+            "scores": {
+                "archer_6a8c78a5d2f60": 0,
+                "archer_6a8c78b98c42a": 0,
+                "archer_6a8c78c6e3c73": 0,
+                "archer_6a8c78d291543": 0
+            }
+        }
+    ]
+}
